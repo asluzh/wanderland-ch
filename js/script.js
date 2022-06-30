@@ -3,7 +3,7 @@ var deviceType = "phone";
 
 function startViz()
 {
-	var url = "https://public.tableau.com/views/WanderlandCH/Erlebnisse?:embed=y&:display_count=no&:showVizHome=no";
+	var url = "https://public.tableau.com/views/WanderlandCH/Erlebnisse";
 	var vizOptions = {
 		hideTabs: true,
 		hideToolbar: true,
