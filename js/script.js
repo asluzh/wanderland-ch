@@ -11,8 +11,6 @@ var deviceType = "phone";
 function startViz()
 {
 	var url = "https://public.tableau.com/views/TravelCH/Erlebnisse";
-	console.log("url: " + tableau_url);
-
 	var vizOptions = {
 		hideTabs: true,
 		hideToolbar: true,
@@ -22,21 +20,21 @@ function startViz()
 
 	var vizDiv = document.getElementById("vizContainer");
 	vizDiv.innerHTML = "";
-	viz = new tableau.Viz(vizDiv, tableau_url, vizOptions);
+	viz = new tableau.Viz(vizDiv, url, vizOptions);
 }
 
 function setVizSize() {
-	var newHeight = window.innerHeight;
-	var newWidth  = window.innerWidth;
-	if (deviceType === "tablet") {
-		newWidth = 1169;
-		newHeight = 827;
-	} else { // default, deviceType = desktop
-		newHeight -= (portal_header_height ? portal_header_height : 0);
-		newWidth -= (portal_header_width ? portal_header_width : 0);
-	}
-	$("#vizContainer").width(newWidth);
-	$("#vizContainer").height(newHeight);
+	// var newHeight = window.innerHeight;
+	// var newWidth  = window.innerWidth;
+	// if (deviceType === "tablet") {
+	// 	newWidth = 1169;
+	// 	newHeight = 827;
+	// } else { // default, deviceType = desktop
+	// 	newHeight -= (portal_header_height ? portal_header_height : 0);
+	// 	newWidth -= (portal_header_width ? portal_header_width : 0);
+	// }
+	// $("#vizContainer").width(newWidth);
+	// $("#vizContainer").height(newHeight);
 }
 
 function initPage()
