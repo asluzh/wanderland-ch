@@ -1,16 +1,9 @@
-// initialize customization variables and functions
-// naming convention: underscores
-var tableau_protocol = window.location.protocol;
-var tableau_host = window.location.host;
-var portal_home_url = "views/Portal/Home";
-
-// working variables, naming convention: underscores
 var viz;
 var deviceType = "phone";
 
 function startViz()
 {
-	var url = "https://public.tableau.com/views/TravelCH/Erlebnisse";
+	var url = "https://public.tableau.com/views/WanderlandCH/Erlebnisse";
 	var vizOptions = {
 		hideTabs: true,
 		hideToolbar: true,
