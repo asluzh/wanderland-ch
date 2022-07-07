@@ -1,5 +1,5 @@
 var viz;
-var deviceType = "phone";
+var deviceType = "desktop";
 
 function startViz()
 {
